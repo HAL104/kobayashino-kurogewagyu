@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>小林の黒毛和牛｜ホーム</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'udy7lgk',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>$(function () {
+      $(window).scroll(function () {
+        const wHeight = $(window).height();
+        const scrollAmount = $(window).scrollTop();
+        $('.scrollanime').each(function () {
+          const targetPosition = $(this).offset().top;
+          if (scrollAmount > targetPosition - wHeight + 70) {
+            $(this).addClass("fadeInDown");
+          }
+        });
+      });
+    });</script>
+</head>
+
+<body id="top">
+  <header>
+    <p id="top-logo"><a href="index.html"><img src="img/title.jpg" alt="小林の黒毛和牛"></a></p>
+    <nav>
+      <ul>
+        <li class="li1"><a href="#s1">生産者メッセージ</a></li>
+        <li class="li2"><a href="#s2">「おいしい」にこだわり</a></li>
+        <li class="li3"><a href="#s3">まるごといただく</a></li>
+        <li class="li4"><a href="#s4">小林市について</a></li>
+        <li class="li5"><a href="#s5">取扱店</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p id="top-img"><img src="img/top-img.jpg" alt="トップ画像"></p>
+  <section id="s1">
+    <h2>生産者メッセージ</h2>
+    <div class="flex">
+      <div id="s1-text">
+        <p>宮崎県小林市から全国、そして全世界へ！<br>
+          自然豊かなこの街で育った良質な黒毛和牛を<br>
+          お店で、お家でどうぞご堪能ください。</p>
+        <p><a href="#">市内生産農家紹介 →</a></p>
+      </div>
+      <p class="scrollanime downup" id="s1-img"><a href="#"><img src="img/message.jpg" alt="給餌"></a></p>
+    </div>
+  </section>
+  <section id="s2">
+    <h2>「おいしい」にこだわり</h2>
+    <div class="flex">
+      <p class="scrollanime downup" id="s2-img"><img src="img/feed.jpg" alt="飼料" 　width="470" height="306"></p>
+      <div id="s2-text">
+        <p>小林の黒毛和牛は土地にこだわり食事にこだわり。<br>
+          「おいしい」につながるすべての工程に<br>
+          こだわりを持って育てています。</p>
+      </div>
+    </div>
+  </section>
+  <section id="s3">
+    <h2>まるごといただく</h2>
+    <div class="flex">
+      <div id="s3-text">
+        <div>
+          <p>ステーキの王様「サーロイン」<br>
+            幻の部位「サンカク」をはじめ、<br>
+            「センマイ」や「テール」など<br>
+            ホルモンまで小林の黒毛和牛は<br>
+            丸ごとすべて一級品。</p>
+        </div>
+        <div id="meat-link">
+          <a href="info.html">
+            <p>部位紹介 →</p>
+          </a>
+        </div>
+      </div>
+      <p class="scrollanime downup" id="s3-img"><a href="info.html"><img src="img/meat-link.jpg" alt="こだわり小林の黒毛和牛"
+            width="470" height="300"></a>
+      </p>
+    </div>
+  </section>
+  <section id="s4">
+    <h2>小林市について</h2>
+    <div class="flex">
+      <p class="scrollanime downup" id="s4-img"><a href="#"><img src="img/kobayashi.jpg" alt="小林市生駒" width="470"
+            height="315"></a></p>
+      <div id="s4-text">
+        <div>
+          <p>宮崎県の南西部に位置する小林市。<br>
+            小林、須木、野尻の3つのエリアからなり、<br>
+            市の南西部には霧島連山、北部には<br>
+            九州山地の山々が連なっています。</p>
+        </div>
+        <div>
+          <p>※こばやしeBooks「こばやしの宝もの。」より</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="s5">
+    <h2>取扱店</h2>
+    <div class="flex">
+      <p><a href="#"><img src="img/肉のキクチ_バナー300x100.jpg" alt="肉のキクチ"></a></p>
+
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+      <p><a href="#"><img src="img/300x100.png" alt="ダミーバナー"></a></p>
+    </div>
+  </section>
+  <footer>
+    <p id="footer-logo"><a href="index.html"><img src="img/title.jpg" alt="小林の黒毛和牛"></a></p>
+    <div class="footer-info flex">
+      <p><a href="#">お問合せ</a></p>
+      <p><a href="#">小林市</a></p>
+    </div>
+    <p><small>&copy;小林黒毛和牛推進委員会</small></p>
+  </footer>
+</body>
+
+</html>
