@@ -4,4 +4,3 @@
 対象ブラウザ：PC  
 使用ツール　：Photoshop・Illustrator・Dreamweaver  
 製作期間　　：６日間
-その他　　　：
