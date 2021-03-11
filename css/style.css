@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+/*=======リセット=========＝==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+/*=========ページスクロール時アニメーション===========*/
+.scrollanime {
+  opacity: 0;
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.downup {
+  transform: translateY(50px);
+}
+/*=========背景設定===========*/
+body {
+  height: 4080px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+/*=========見出しフォント===========*/
+h2,
+h3,
+small {
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*=========ヘッダー===========*/
+header {
+  width: 960px;
+  height: 124px;
+  margin: 20px auto 17px;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  padding: 79px 0 0 320px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+li {
+  height: 17px;
+  border-left: 5px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 17px 10px 0;
+  text-shadow: 1px 1px 1px #ccc;
+}
+li a:hover {
+  background: #000;
+  color: #fff;
+  text-shadow: 0 0 0 #000;
+}
+.li1,
+.li3,
+.li4 {
+  flex-basis: 140px;
+}
+.li2 {
+  flex-basis: 161px;
+}
+.li4 {
+  margin-right: 16px;
+}
+.li5 {
+  flex-basis: 60px;
+}
+li:last-child {
+  margin: 0 0 0 -1px;
+}
+/*=======トップイメージ========*/
+#top-img {
+  text-align: center;
+}
+/*====section共通スタイル=======*/
+.flex {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 20px;
+  justify-content: space-between;
+}
+#s1-text,
+#s2-text,
+#s3-text > div,
+#s4-text > div:first-child,
+#footer-logo,
+.footer-info p {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+}
+a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#top-logo a:hover,
+#s1-img a:hover,
+#s3-img a:hover,
+#s4-img a:hover,
+#s5 a:hover,
+#footer-logo a:hover {
+  opacity: 0.6;
+  filter: brightness(110%);
+}
+/*======生産者メッセージ========*/
+#s1 {
+  height: 497px;
+  margin-top: 70px;
+  background-color: #f8f8f8;
+}
+#s1 h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: -11px 0 -2px;
+  padding-top: 37px;
+}
+#s1-text {
+  width: 470px;
+  height: 200px;
+  margin: 93px 20px 0 0;
+  line-height: 1.7;
+  background: #fff;
+}
+#s1-text p {
+  margin: 26px 0 0 37px;
+}
+#s1-text p:last-child {
+  font-size: 24px;
+  margin: 17px 0 0 224px;
+}
+#s1-text a {
+  padding-left: 13px;
+}
+#s1-text a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+#s1-img {
+  margin-top: 37px;
+}
+/*====「おいしい」にこだわり=====*/
+#s2 h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 2px 0 -5px;
+  padding: 75px 0 0 20px;
+}
+#s2-img {
+  margin-top: 40px;
+}
+#s2-text {
+  width: 470px;
+  height: 200px;
+  margin: 93px 0 0 20px;
+  line-height: 1.7;
+  background: #fff;
+}
+#s2-text p {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+/*========まるごといただく=======*/
+#s3 {
+  height: 497px;
+  margin-top: 70px;
+  background-color: #f8f8f8;
+}
+#s3 h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: -8px 0 -2px;
+  padding: 33px 0 0 20px;
+}
+#s3-text div:first-child {
+  height: 200px;
+  width: 470px;
+  background: #fff;
+  margin-top: 88px;
+}
+#s3-text p {
+  padding-top: 14px;
+  padding-left: 91px;
+  line-height: 1.75;
+}
+#meat-link {
+  height: 50px;
+  width: 224px;
+  margin: 29px auto 0;
+  background: #fff;
+}
+#meat-link a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+#meat-link p {
+  padding-top: 7px;
+  padding-left: 47px;
+  font-size: 24px;
+}
+#s3-img {
+  margin-top: 37px;
+}
+/*========小林市について==========*/
+#s4 {
+  height: 497px;
+  margin-top: 70px;
+}
+#s4 h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0 0 20px;
+}
+#s4-img {
+  margin-top: 62px;
+}
+#s4-text {
+  margin-top: 120px;
+}
+#s4-text div {
+  height: 200px;
+  width: 470px;
+  background: #fff;
+}
+#s4-text div:first-child p {
+  padding: 34px 0 0 59px;
+  line-height: 1.7;
+}
+#s4-text div:last-child {
+  height: auto;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 41px;
+  margin-left: -86px;
+}
+/*===========取扱店========*/
+#s5 {
+  height: 497px;
+  margin-top: 70px;
+  background-color: #f8f8f8;
+}
+#s5 h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 5px 0 0 15px;
+}
+#s5 .flex {
+  flex-wrap: wrap;
+  height: 392px;
+  margin-top: 32px;
+}
+/*===========フッター===========*/
+footer {
+  height: 400px;
+  width: 100%;
+  background: #a0a0a0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+#footer-logo {
+  display: inline-block;
+  width: 306px;
+  height: 156px;
+  margin: 50px 0 51px;
+  background: #fff;
+}
+#footer-logo img {
+  margin-top: 17px;
+}
+.footer-info {
+  width: 306px;
+  margin-bottom: 42px;
+  font-size: 14px;
+}
+.footer-info p {
+  height: 25px;
+  width: 143px;
+  background: #fff;
+  line-height: 25px;
+}
+.footer-info a:hover {
+  background: #000;
+  color: #fff;
+}
+small {
+  font-weight: normal;
+}
